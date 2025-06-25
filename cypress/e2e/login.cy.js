@@ -36,14 +36,14 @@ describe('Тестирование авторизации и профиля', ()
   it('Переход в раздел "Учебный центр" и далее в подраздел "Компания"', () => {  
     cy.login(data.validLogin, data.validPassword); 
     cy.get('[data-cy="submenu-title-ms-education-center"]').should('be.visible').click();
-    cy.get('[data-cy=router-link-Company]').first().click()
+    cy.get('[data-cy="router-link-Company"]').first().click()
   });  
 
   it('Сравнение имени руководителя и имени авторизованного пользователя', () => {
     cy.login(data.validLogin, data.validPassword); 
 
     cy.get('[data-cy="submenu-title-ms-education-center"]').should('be.visible').click();
-    cy.get('[data-cy=router-link-Company]').first().click()
+    cy.get('[data-cy="router-link-Company"]').first().click()
     
     cy.get('div.description-value a[target="_blank"]').invoke('text').then((leaderName) => {
       cy.get('span.el-avatar.el-avatar--circle.cursor-pointer.avatar-icon-bg.el-tooltip__trigger').should('be.visible').click();
