@@ -1,6 +1,6 @@
 {
-    "validLogin":"dumbledore@sct.team",
-    "validPassword":"12345678qQ1",
-    "invalidLogin":"wrong@example.com",
-    "invalidPassword":"wrongpassword"
+  "validLogin": "dumbledore@sct.team",
+  "validPassword": "12345678qQ1",
+  "invalidLogin": "wrong@example.com",
+  "invalidPassword": "wrongpassword"
 }
